@@ -133,6 +133,10 @@ Complaint Deleted Successfully.
 ==============================================================
 ```
 
+==============================================================
+          BANKING MANAGEMANT SYSTEM
+==============================================================
+
 ### 1. Application Start
 
 ``` text
@@ -339,6 +343,9 @@ Enter your Choice: 8
 
 Thank You!
 ```
+==============================================================
+          VEHICLE SERVICE CENTER MANAGEMENT
+==============================================================
 
 ### Application Start
 
@@ -509,137 +516,308 @@ Enter Your Choice: 6
 
 Thank You!
 ```
-## Employee Fields
 
-The `Employee` class contains:
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice:
+```
 
--   Employee ID
--   Employee Name
--   Department
--   Email
--   Phone
+---
 
-These fields are defined in the uploaded `Employee.java` file.
-fileciteturn5file1L5-L9
+## 1. Register Employee
 
-## Features
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 1
 
-### 1. Add Employee
+Enter Employee Name : Rahul
+Enter Department     : IT
+Enter Email          : rahul@gmail.com
+Enter Phone          : 9876543210
 
-The `addEmployee()` method inserts employee name, department, email, and
-phone into the `employees` table. fileciteturn5file2L13-L32
-
-### Expected Output
-
-``` text
 Employee Added Successfully.
 ```
 
-------------------------------------------------------------------------
+---
 
-### 2. View Employees
+## 2. View Employees
 
-The `viewEmployees()` method displays employee records in a neatly
-aligned table. It also limits long department and email values so the
-table remains properly aligned. fileciteturn5file2L40-L87
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 2
 
-### Output
 
-``` text
-================================================================================
-ID    | Name         | Department                | Email                     | Phone
---------------------------------------------------------------------------------
-1     | Rahul        | IT                        | rahul@gmail.com            | 9876543210
-2     | Priya        | HR                        | priya@gmail.com            | 9876543211
-3     | Arun         | Finance                   | arun@gmail.com             | 9876543212
-4     | Sneha        | Testing                   | sneha@gmail.com            | 9876543213
-================================================================================
+==============================================================================================================
+ID       Name                           Department                     Email                               Phone
+==============================================================================================================
+1        Rahul                          IT                             rahul@gmail.com                    9876543210
+2        Priya                          HR                             priya@gmail.com                    9876543211
+3        Arun                           Finance                        arun@gmail.com                     9876543212
+==============================================================================================================
 ```
 
-> The names, departments, emails, phone numbers, and IDs above are
-> sample output. Actual values depend on the records in your MySQL
-> database.
+---
 
-### Table Formatting
+## 3. Update Employee
 
-The program uses `printf()` with fixed-width columns:
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 3
 
-``` text
-ID    | Name         | Department                | Email                     | Phone
-```
+Enter Employee ID : 1
+Enter Employee Name : Rahul Kumar
+Enter Department : IT
+Enter Email : rahulkumar@gmail.com
+Enter Phone : 9876543210
 
-This keeps the employee information clean and easy to read in the
-console. fileciteturn5file2L52-L76
-
-------------------------------------------------------------------------
-
-### 3. Update Employee
-
-The `updateEmployee()` method updates:
-
--   Employee name
--   Department
--   Email
--   Phone
-
-using the employee ID. fileciteturn5file2L96-L116
-
-### Expected Output
-
-``` text
 Employee Updated Successfully.
 ```
 
-------------------------------------------------------------------------
+---
 
-### 4. Delete Employee
+## 4. Delete Employee
 
-The `deleteEmployee()` method deletes an employee using the employee ID.
-fileciteturn5file2L125-L141
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 4
 
-### Expected Output
-
-``` text
-Employee Deleted Successfully.
-```
-
-## JDBC Concepts Used
-
--   JDBC Connection
--   `PreparedStatement`
--   `ResultSet`
--   CRUD Operations
--   Exception Handling
--   `printf()` output formatting
-
-## CRUD Operations
-
-``` text
-CREATE  → Add Employee
-READ    → View Employees
-UPDATE  → Update Employee
-DELETE  → Delete Employee
-```
-
-## Console Output Preview
-
-A typical flow will look like:
-
-``` text
-Database Connected Successfully.
-
-Employee Added Successfully.
-
-
-================================================================================
-ID    | Name         | Department                | Email                     | Phone
---------------------------------------------------------------------------------
-1     | Rahul        | IT                        | rahul@gmail.com            | 9876543210
-2     | Priya        | HR                        | priya@gmail.com            | 9876543211
-3     | Arun         | Finance                   | arun@gmail.com             | 9876543212
-================================================================================
-
-Employee Updated Successfully.
+Enter Employee ID : 1
 
 Employee Deleted Successfully.
 ```
+
+---
+
+## 5. Apply Leave
+
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 5
+
+Enter Employee ID : 2
+Enter Leave Type  : Casual Leave
+Enter From Date   : 2026-08-10
+Enter To Date     : 2026-08-12
+Enter Reason      : Personal work
+
+Leave Applied Successfully.
+```
+
+---
+
+## 6. Approve Leave
+
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 6
+
+Enter Leave ID : 1
+
+Leave Approved Successfully.
+```
+
+---
+
+## 7. Reject Leave
+
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 7
+
+Enter Leave ID : 2
+
+Leave Rejected Successfully.
+```
+
+---
+
+## 8. View Leave Requests
+
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 8
+
+
+==============================================================================================================
+ID       Employee Name             Leave Type          From Date       To Date         Status
+==============================================================================================================
+1        Rahul Kumar               Casual Leave        2026-08-10      2026-08-12      Approved
+2        Priya                     Sick Leave          2026-08-15      2026-08-16      Rejected
+3        Arun                      Earned Leave        2026-08-20      2026-08-22      Pending
+==============================================================================================================
+```
+
+---
+
+## 9. View Leave Balance
+
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 9
+
+
+================================================================================
+ID       Employee Name             Total Leaves     Used Leaves     Remaining
+================================================================================
+1        Rahul Kumar               20               5               15
+2        Priya                     20               3               17
+3        Arun                      20               2               18
+================================================================================
+```
+
+---
+
+## 10. Exit
+
+```text
+==============================================================
+          Employee Leave Management System
+==============================================================
+1. Register Employee
+2. View Employees
+3. Update Employee
+4. Delete Employee
+5. Apply Leave
+6. Approve Leave
+7. Reject Leave
+8. View Leave Requests
+9. View Leave Balance
+10. Exit
+==============================================================
+Enter your choice: 10
+
+
+==============================================================
+       Thank You for Using Employee Leave Management System
+==============================================================
+```
+
